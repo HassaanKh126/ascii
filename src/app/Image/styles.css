@@ -1,0 +1,49 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.canvas-container {
+    flex: 1;
+    max-height: 500px;
+    /* overflow: auto; */
+    padding-right: 20px;
+}
+
+.controls-panel {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    width: 250px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.btn,
+input[type="file"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #444;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #666;
+}
+
+canvas {
+    display: block;
+    background: #111;
+}

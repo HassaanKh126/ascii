@@ -1,0 +1,12 @@
+.webcam-container {
+  padding: 20px;
+  text-align: center;
+  background: #111;
+  min-height: 100vh;
+}
+
+#asciiCanvas {
+  display: block;
+  margin: 0 auto;
+  background: #111;
+}

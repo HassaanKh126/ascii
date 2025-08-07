@@ -114,14 +114,6 @@ export default function Home() {
 
   return (
     <main>
-      <div className="header">
-        <h2>🎨 Color ASCII Art Generator</h2>
-        <nav className="nav-links">
-          <button onClick={()=>{router.push("/Image")}}>Image</button>
-          <button onClick={()=>{router.push("/Video")}}>Video</button>
-          <button onClick={()=>{router.push("/Webcam")}}>Webcam</button>
-        </nav>
-      </div>
       <input
         type="file"
         accept="image/*"
@@ -160,15 +152,15 @@ export default function Home() {
             onChange={(e) => setBrightnessBoost(parseFloat(e.target.value))}
           />
 
-          <button onClick={() => setUseColor(!useColor)}>
+          <button className='btn' onClick={() => setUseColor(!useColor)}>
             Color: {useColor ? "ON" : "OFF"}
           </button>
 
-          <button onClick={handleDownloadTxt}>Download .txt</button>
-          <button onClick={handleDownloadPng}>Download .png</button>
+          <button className='btn' onClick={handleDownloadTxt}>Download .txt</button>
+          <button className='btn' onClick={handleDownloadPng}>Download .png</button>
 
-          <button onClick={handleZoomIn}>🔍 Zoom In</button>
-          <button onClick={handleZoomOut}>🔎 Zoom Out</button>
+          <button className='btn' onClick={handleZoomIn}>🔍 Zoom In</button>
+          <button className='btn' onClick={handleZoomOut}>🔎 Zoom Out</button>
         </div>
       </div>
     </main>

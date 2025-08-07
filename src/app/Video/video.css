@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.canvas-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  overflow: auto;
+  background: #111;
+}
+
+#asciiCanvas {
+  background: #111;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.controls {
+  width: 250px;
+  background: #1a1a1a;
+  padding: 20px;
+  box-sizing: border-box;
+  border-left: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  height: 100%;
+}
+
+.controls input[type="file"] {
+  color: #eee;
+  background: #333;
+  padding: 6px;
+}
